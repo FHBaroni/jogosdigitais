@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "jogosDigitaisJoinville": {
+    "ng-jogos-joinville": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/ng-jogos-joinville",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "jogosDigitaisJoinville:build:production"
+              "browserTarget": "ng-jogos-joinville:build:production"
             },
             "development": {
-              "browserTarget": "jogosDigitaisJoinville:build:development"
+              "browserTarget": "ng-jogos-joinville:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "jogosDigitaisJoinville:build"
+            "browserTarget": "ng-jogos-joinville:build"
           }
         },
         "test": {

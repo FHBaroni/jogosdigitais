@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'jogosDigitaisJoinville'`, () => {
+  it(`should have as title 'ng-jogos-joinville'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('jogosDigitaisJoinville');
+    expect(app.title).toEqual('ng-jogos-joinville');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('jogosDigitaisJoinville app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ng-jogos-joinville app is running!');
   });
 });
